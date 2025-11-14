@@ -23,3 +23,17 @@ int main() {
     std::cout << predator.tostring() << std::endl;
     std::cout << regrettingYou.tostring() << std::endl;
     std::cout << sarahsOil.tostring() << std::endl;
+
+    // Use makeClock() 
+    clockType* newClockPtr = makeClock();      // makeClock returns a pointer
+
+    predator.addTime(*newClockPtr);            // Pass object by dereferencing pointer
+    delete newClockPtr;                        // Clean up memory
+
+    // Display updated times for Predator
+    std::cout << "\nAfter adding new time:\n";
+    std::cout << predator.tostring() << std::endl;
+
+    return 0;
+}
+
