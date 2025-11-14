@@ -18,3 +18,8 @@ int main() {
 
     MovieTimes sarahsOil("Sarah's Oil", 103, "PG");
     sarahsOil.enterTimes();
+
+    // Display initial times
+    std::cout << predator.tostring() << std::endl;
+    std::cout << regrettingYou.tostring() << std::endl;
+    std::cout << sarahsOil.tostring() << std::endl;
